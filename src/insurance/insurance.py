@@ -1,7 +1,6 @@
 import pandas as pd
 pd.set_option('display.float_format', lambda x: '%.2f' % x)
 import numpy as np
-import csv
 from sklearn.compose import make_column_transformer
 from sklearn.preprocessing import RobustScaler, MinMaxScaler, LabelEncoder,OneHotEncoder
 from sklearn.ensemble import RandomForestClassifier
