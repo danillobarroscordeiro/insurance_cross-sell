@@ -1,5 +1,5 @@
 # Health insurance cross-sell
-![](images/img.jpg)
+![](reports/figures/img.jpg)
 
 ## 1. Introduction
 This is an end-to-end data science project which a classification algorithm was used to rank clients which would be interested in getting a car insurance. It was used machine learning Random Forest algorithm to sort these clients.
@@ -64,7 +64,7 @@ This project was developed following CRISP-DM (Cross-Industry Standard Process -
 * Model and Business performance evaluation / Results;
 * Model deployment.
 
-![](images/crisp-dm.png)
+![](reports/figures/crisp-dm.png)
 
 **Step 1. Data description and cleaning:** Seeing dimensions of data, checking existence of NAs, number of rows and columns. Fillout NAs, altering columns names,  Descriptive statistics.
 
@@ -90,24 +90,24 @@ This project was developed following CRISP-DM (Cross-Industry Standard Process -
 
 **True/False:** False. In fact the proportion of customers between 35 and 55 years old interested in getting a car insurance is almost double of proportion of customers who has more than 55 years old.
 
-![](images/h2_table.png)
-![](images/h2_plot.png)
+![](reports/figures/h2_table.png)
+![](reports/figures/h2_plot.png)
 
 
 **Hypothesis 02:** The proportion of customers who pays more than $40,000 in their health insurance and are  interested in getting a car insurance is 20%  higher than customers who pays less than $20,000
 
 **True/False:** False. The proportion of customers who pays more than $40,000 in their health insurance is approximately 15\% higher than who pays above $20,000. Chi-squared test shows we can reject the null hypothesis of independence.
 
-![](images/h6_table.png)
-![](images/h6_plot.png)
+![](reports/figures/h6_table.png)
+![](reports/figures/h6_plot.png)
 
 **Hypothesis 03:** The proportion of customers whose cars have less than 1 year old and are interested in getting a car insurance  is 15% higher than customers whose cars have more than 2 years old.
 
 
 **True/False:** False. The proportion of customers who have cars with more than 2 years and are interested in getting a car insurance is about 700% higher than customers with newer cars (less than a year).
 
-![](images/h7_table.png)
-![](images/h7_plot.png)
+![](reports/figures/h7_table.png)
+![](reports/figures/h7_plot.png)
 
 # 8. Machine Learning Model Applied and performance
 Three classification models were tested: XGBoost, Random Forest and Naive Bayes.
@@ -122,14 +122,14 @@ The higher this proportion the better will be the model compared to randomly sel
 
 
 
-![](images/naive.png)
-![](images/rf.png)
-![](images/XGBoost.png)
+![](reports/figures/naive.png)
+![](reports/figures/rf.png)
+![](reports/figures/XGBoost.png)
 
 
 It was chosen Random Forest model and below one can see its performance with hiperparameters tuned. The lift score of this final model was 3.50, which means that this model is 3.50 times better than randomly select clients.
 
-![](images/rf_final.png)
+![](reports/figures/rf_final.png)
 
 
 
