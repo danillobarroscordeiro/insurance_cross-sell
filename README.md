@@ -4,11 +4,14 @@
 ## 1. Introduction
 This is an end-to-end data science project which a classification algorithm was used to rank clients which would be interested in getting a car insurance. It was used machine learning Random Forest algorithm to sort these clients.
 
+The deployment was did in a AWS cloud server (EC2) and results was accessed through Google sheets.
+
 # 2. Business Problem.
 
 A health insurance company would like to offer car insurance to their clients and would like to know which of them would be interested in getting it. Also, they would like to rank those clients sorting them by highest chance of making this cross-sell.
 
 Therefore, instead of contacting their client randomly to offer this insurance they will get a sorted list to be more effective in converting this deal.
+
 
 # 3. Business Assumptions.
 
@@ -20,6 +23,8 @@ Therefore, instead of contacting their client randomly to offer this insurance t
 * Git and Github
 * Flask and Python API's
 * Sklearn
+* EC2 server
+* Google Sheets
 
 # 5. Dataset
 
@@ -137,6 +142,10 @@ It was chosen Random Forest model and below one can see its performance with hip
 It is possible to simulate some scenarios based on the capacity of the company to make contact with clients, since there are some costs in archieving them.
 
 if the company could just contacting 30% of all their clients (assume this percetage is 20,000 clients), the model will rank the clients with best probability of getting the car insurance and approximately 70% (14,000) of these chosen clients would be interested in acquiring the car insurance.
+
+Company could have access to model results directly from a Google Sheet just putting customers information. An API get these informations and returns to Google sheet the results.
+
+![](reports/figures/google_sheet.gif)
 
 # 10. Conclusions
 
