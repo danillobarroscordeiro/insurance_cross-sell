@@ -53,7 +53,7 @@ class Insurance(object):
 
     
     def feature_engineering(self,df):
-        df['annual_premium_and_vintage'] = df['annual_premium'] / df['vintage']
+        df['annual_premium_and_vintage'] = float(df['annual_premium']) / int(df['vintage'])
         
         return df
         
